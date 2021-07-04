@@ -1,12 +1,23 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import './App.css';
+import { createGlobalStyle } from "styled-components";
+import Header from "./components/Header";
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    
+  }
+`;
 
 function App() {
   return (
-    <div className="App">
+    <>
+    <GlobalStyle />
+    {/* <div className="App">
       <Route path="/page" component={} exact />
-    </div>
+    </div> */}
+    <Header />
+    </>
   );
 }
 
