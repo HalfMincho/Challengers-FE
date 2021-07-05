@@ -44,7 +44,7 @@ const HeaderBlock = styled.div`
     box-sizing: border-box;
     width: 400px;
     height: 45px;
-    padding: 12px 150px 12px 20px;
+    padding: 12px 0px 12px 20px;
     background-color: #f1f3f5;
     outline: none;
     border: none;
