@@ -1,11 +1,11 @@
 import React from "react";
 import { Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
+import GlobalFonts from "./styles/fonts/fonts";
 import Header from "./components/Header";
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    
+  body {  
   }
 `;
 
@@ -13,6 +13,7 @@ function App() {
   return (
     <>
     <GlobalStyle />
+    <GlobalFonts />
     {/* <div className="App">
       <Route path="/page" component={} exact />
     </div> */}
@@ -20,5 +21,7 @@ function App() {
     </>
   );
 }
+
+
 
 export default App;

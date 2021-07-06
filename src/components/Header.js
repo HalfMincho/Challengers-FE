@@ -4,19 +4,13 @@ import { HiOutlineSearch } from "react-icons/hi";
 
 const HeaderBlock = styled.div`  
   nav {
-    padding-top: 41px;
-    padding-right: 170px;
-    padding-bottom: 23px;
-    padding-left: 170px;
-
-    margin: 0 auto;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    background-color: white;
-    width: 100%;
+    padding: 41px 170px 23px;
 
     border-bottom: 1px solid #ced4da;
 
@@ -28,7 +22,7 @@ const HeaderBlock = styled.div`
     padding: 16px 0px 16px 0px;
   }
   a {
-    margin-right: 50px;
+    padding-right: 50px;
   }
   .navbar__logo_img {
     width: 120px;
@@ -49,6 +43,30 @@ const HeaderBlock = styled.div`
     outline: none;
     border: none;
     border-radius: 2em;
+  }
+
+  .navbar__right-side {
+    box-sizing: border-box;
+    padding-right: 0px;
+  }
+  .navbar__right-side_make-challenge {
+    box-sizing: border-box;
+    margin-right: 1em;
+    padding: 7px 11px;
+
+    border: none;
+    border-radius: 0.3em;
+    background-color: #f06595;
+    color: white;
+  }
+  .navbar__right-side_login {
+    box-sizing: border-box;
+
+    padding: 7px 0px 7px 11px;
+    border: none;
+    background-color: white;
+    border-radius: 0.3em;
+
   }
 
 `;
@@ -79,10 +97,10 @@ function Header() {
           </div>
         </div>
         <div className="navbar__right-side">
-          <button className="makeChallenge">
+          <button className="navbar__right-side_make-challenge">
             <span>챌린지 개설하기</span>
           </button>
-          <button className="login">
+          <button className="navbar__right-side_login">
             <span>로그인</span>
           </button>
         </div>
