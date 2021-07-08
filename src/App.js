@@ -4,8 +4,7 @@ import { createGlobalStyle } from "styled-components";
 import Header from "./components/Header";
 
 const GlobalStyle = createGlobalStyle`
-  body {
-    
+  body {  
   }
 `;
 
@@ -20,5 +19,7 @@ function App() {
     </>
   );
 }
+
+
 
 export default App;
