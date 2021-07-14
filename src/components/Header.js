@@ -54,7 +54,13 @@ const HeaderBlock = styled.div`
     border-radius: 0.3em;
     background-color: #f06595;
     color: white;
+
   }
+  .navbar__right-side_make-challenge:hover,
+  .navbar__right-side_login {
+    cursor: pointer;
+  }
+
   .navbar__right-side_login {
     box-sizing: border-box;
 
